@@ -1,9 +1,36 @@
-.hg-conteudo {
-    background-color: silver;
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+    font-family: 'Raleway', sans-serif;
 }
 
-.hg-conteudo > main {
-    background-color: #aaa;
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conteudo {
+    background-color: rgba(139, 97, 77, 0.527);
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.conteudo > main {
+    background-color:rgba(139, 97, 77, 0.527) ;
+    max-width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	background:rgba(139, 97, 77, 0.527);
+    flex: 1;
+    text-align: justify;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
 }
 
 body {
@@ -14,27 +41,71 @@ body {
     flex-flow: column;
 }
 
-.hg-conteudo {
-    flex: 1;
-    display: flex;
-    flex-flow: column;
-}
-
-.hg-conteudo > nav {
+.conteudo > nav {
     order: -1;
 }
 
-.hg-conteudo > main {
-    flex: 1;
-}
-
 @media (min-width: 768px) {
-    .hg-conteudo {
+    .conteudo {
         flex-flow: row;
     }
 
-    .hg-conteudo > aside,
-    .hg-conteudo > nav {
+    .conteudo > aside,
+    .conteudo > nav {
         flex: 0 0 200px;
     }
+}
+.conteudo > main img {
+    margin: 0 auto;
+    padding: 5px;
+  }
+  img {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .conteudo > nav a {
+    background-color: rgba(139, 97, 77, 0.527);
+    color: rgb(27, 19, 8);
+    border-radius: 25px;
+    margin: 0 0 5px 0;
+    padding: 4px;
+    text-align: center;
+    min-width: 100px;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(139, 97, 77, 0.527);
+  }
+  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+  }
+p.texto{
+    font-family: 'Raleway', sans-serif;
+}
+h2.titulo{
+
+}
+h4.titulo2{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+p.link{
+    font-family: 'Raleway', sans-serif;
+}
+p.autor{
+    font-family: 'Raleway', sans-serif;
+}
+.midia{
+    float: center;
+    width: 90%;
+    text-align: center;
+    text-indent: 0;
+    border: thin burlywood solid;
+    margin: 0.10em;
+    padding: 0.10em;
 }
